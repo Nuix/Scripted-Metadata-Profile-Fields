@@ -20,7 +20,7 @@ The scripts then differ slightly in how they present the final sum.
 
 ![image](https://user-images.githubusercontent.com/11775738/54221119-16dc9b00-44b0-11e9-9352-cd1fd8d8a6c4.png)
 
-Scripts that convert the sum into a unit (MB, GB, Dyanmic) use 1KB = 1024B, 1MB = 1024KB.  If you prefer to instead use the [SI units](https://en.wikipedia.org/wiki/Kilobyte#Base_10_(1000_bytes)), such as 1KB = 1000B, then you can edit this line at the top of each relevant script:
+Scripts that convert the sum into a unit (MB, GB, Dyanmic) use 1KB = 1024B, 1MB = 1024KB, and so on.  If you prefer to instead use the [SI units](https://en.wikipedia.org/wiki/Kilobyte#Base_10_(1000_bytes)), such as 1KB = 1000B, then you can edit this line at the top of each relevant script:
 
 ```ruby
 SIZE_BASE_UNIT = 1024.0
