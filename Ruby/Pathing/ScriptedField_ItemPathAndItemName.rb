@@ -1,4 +1,2 @@
-pieces = []
-pieces += $current_item.getLocalisedPathNames
-pieces << $current_item.getLocalisedName
+pieces = $current_item.getLocalisedPathNames
 return pieces.join("/")
