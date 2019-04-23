@@ -72,8 +72,12 @@ if $current_item.isPhysicalFile
 	return physical_path
 else
 	physical_item = Helpers.find_physical_ancestor($current_item)
-	physical_path = Helpers.get_physical_path(physical_item)
-	physical_item_path = physical_item.getLocalisedPathNames.join("/")
+	physical_path = ""
+	physical_item_path = ""
+	if physical_item.nil? == false
+		physical_path = Helpers.get_physical_path(physical_item)
+		physical_item_path = physical_item.getLocalisedPathNames.join("/")
+	end
 	item_path = $current_item.getLocalisedPathNames.join("/").gsub(physical_item_path+"/","")
 	return physical_path+attachment_separator+item_path
 end
