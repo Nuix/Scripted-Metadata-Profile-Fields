@@ -29,3 +29,6 @@ buildNumber.properties
 
 # Avoid ignoring Maven wrapper jar file (.jar files are usually ignored)
 !/.mvn/wrapper/maven-wrapper.jar
+
+# Don't commit the help PDF
+UsingScriptedMetadataProfileFields.html.pdf
