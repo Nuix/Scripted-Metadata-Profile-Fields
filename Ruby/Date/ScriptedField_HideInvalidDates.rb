@@ -15,12 +15,14 @@ value_if_no_date = ""
 # Value if the item date present falls outside our specified range
 value_if_invalid_date = ""
 
-# Get the current item's date
-item_date = $current_item.getDate.withZone(time_zone)
+item_date = $current_item.getDate
 
 if item_date.nil?
 	return value_if_no_date
 end
+
+# Get the current item's date
+item_date = $current_item.getDate.withZone(time_zone)
 
 # Check if the item's date falls within our range
 is_before_range = item_date.isBefore(valid_min_date)
