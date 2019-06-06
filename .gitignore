@@ -31,4 +31,4 @@ buildNumber.properties
 !/.mvn/wrapper/maven-wrapper.jar
 
 # Don't commit the help PDF
-UsingScriptedMetadataProfileFields.html.pdf
+UsingScriptedMetadataProfileFields.pdf
