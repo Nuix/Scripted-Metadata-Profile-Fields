@@ -28,3 +28,7 @@ Example: `D:\natives\FakeData\Kovacek_Gracie.zip`
 Provides the file system path for the given item if it is `flag:physical_file`.  If it is not `flag:physical_file`, yields a blank value.
 
 For the zip item this would be `D:\natives\FakeData\Kovacek_Gracie.zip`, for the EML item this would be blank since it it contained within the `flag:physical_file` item `Kovacek_Gracie.zip`.
+
+## [ScriptedField_PhysicalFilePathExists.rb](https://github.com/Nuix/Scripted-Metadata-Profile-Fields/blob/master/Ruby/Pathing/ScriptedField_PhysicalFilePathExists.rb)
+
+Similar to [ScriptedField_PhysicalFilePath.rb](https://github.com/Nuix/Scripted-Metadata-Profile-Fields/blob/master/Ruby/Pathing/ScriptedField_PhysicalFilePath.rb) except this field then takes the determined file system path and checks whether the specified file actually exists, returning `true` if is does and `false` if not.  This field will also yield blank values if the given item is not `flag:physical_file`.
