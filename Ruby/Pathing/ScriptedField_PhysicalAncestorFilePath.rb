@@ -45,7 +45,7 @@ def get_physical_path(item)
 				# convert forward slashes to back slashes
 				strPath.gsub!('/','\\')
 			end
-		rescue Exception => ex
+		rescue Exception => exc
 			result[:error] = "Error parsing URI '#{exc.message}' => GUID: #{item.getGuid} NAME: #{item.getLocalisedName}"
 			result[:success] = false
 			return result
