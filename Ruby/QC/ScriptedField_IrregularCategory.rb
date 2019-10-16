@@ -63,8 +63,8 @@ exc << 'Text Not Processed' if $current_item.matches_search('flag:text_not_proce
 exc << 'Images Not Processed' if $current_item.matches_search('flag:images_not_processed')
 # "Reloaded" => "flag:reloaded"
 exc << 'Reloaded' if $current_item.matches_search('flag:reloaded')
-# "Poisoned" => "flag:poisoned"
-exc << 'Poisoned' if $current_item.matches_search('flag:poisoned')
+# "Poisoned" => "flag:poison"
+exc << 'Poisoned' if $current_item.matches_search('flag:poison')
 # "Slack Space" => "flag:slack_space"
 exc << 'Slack Space' if $current_item.matches_search('flag:slack_space')
 # "Unallocated Space" => "flag:unallocated_space"
