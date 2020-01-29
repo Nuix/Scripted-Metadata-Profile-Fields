@@ -3,7 +3,7 @@
 # Time zone to use (see: http://joda-time.sourceforge.net/timezones.html)
 zone = org.joda.time.DateTimeZone.forID('HST')
 # Format for string
-format = 'yyy-mm-dd hh:mm:ss a zzzz'
+format = "yyyy-MM-dd'T'HH:mm:ss.SSSZZ"
 
 item_date = $current_item.getDate
 # ensure property is a DateTime
