@@ -6,6 +6,7 @@ zone = org.joda.time.DateTimeZone.forID('HST')
 format = 'yyy-mm-dd hh:mm:ss a zzzz'
 
 item_date = $current_item.getDate
-return if item_date.nil?
+# ensure property is a DateTime
+return unless item_date.is_a?(Java::OrgJodaTime::DateTime)
 
 item_date.withZone(zone).toString(format)
