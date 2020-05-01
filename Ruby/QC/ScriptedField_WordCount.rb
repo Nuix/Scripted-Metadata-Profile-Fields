@@ -1,8 +1,6 @@
-text = $current_item.get_text_object
-# skip items without stored text
-return unless text.isAvailable
-
-# convert non-alphabet characters to space
-text_string = text.to_string.gsub(/[^-a-zA-Z]/, ' ')
-# split on whitepsace and return size of array
-text_string.split.size
+# Yields the number total term occurrences in the given item's content text.
+case_stats = $current_case.get_statistics
+# get term statistics for item's content field
+term_stats = case_stats.get_term_statistics("guid:#{$current_item.get_guid}", 'field' => 'content')
+# count total term ocurrences
+term_stats.map { |_t, c| c }.reduce(0, :+)
