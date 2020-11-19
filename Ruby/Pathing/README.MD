@@ -18,6 +18,12 @@ Provides a path value containing the given item's item path ending with the give
 
 Example: `Evidence 1/FakeData/Kovacek_Gracie.zip/Email0001.eml`
 
+## [ScriptedField_CaseNameAndItemPathAndItemName.rb](https://github.com/Nuix/Scripted-Metadata-Profile-Fields/blob/master/Ruby/Pathing/ScriptedField_CaseNameAndItemPathAndItemName.rb)
+
+This scripted field is similar to `ScriptedField_ItemPathAndItemName.rb`, with the addition that the name of the item's containing case is the first element in the path value.  For example, if the case is named `Case001`, then you might get a value like the following:
+
+Example: `Case001/Evidence 1/FakeData/Kovacek_Gracie.zip/Email0001.eml`
+
 ## [ScriptedField_PhysicalAncestorFilePath.rb](https://github.com/Nuix/Scripted-Metadata-Profile-Fields/blob/master/Ruby/Pathing/ScriptedField_PhysicalAncestorFilePath.rb)
 Provides a field which contains the file system path of the `flag:physical` file ancestor the given item came from (if there was one).  If the given item itself is `flag:physical_file` then this will be the file system path for the given item.
 
