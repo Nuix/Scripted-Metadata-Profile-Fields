@@ -1,5 +1,7 @@
 entity_type = 'country'
 entities = $current_item.get_entities(entity_type)
+return nil if entities.empty?
+
 entity_map = Hash.new(0)
 text_object = $current_item.get_text_object
 buffered_reader = nil
