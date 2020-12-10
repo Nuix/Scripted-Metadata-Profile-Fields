@@ -1,3 +1,8 @@
+# Note: The built in field "Decryption Password" should provide the same
+# information as this scripted field and probably should be preferred to
+# using this scripted field.  This partially exists to serve as an
+# example of calling Item.revealDecryptionPassword
+
 # When asking the Nuix API to provide the password used to decrypt that
 # item, Nuix has you provide a piece of code that it will invoke.  That
 # piece of code is then provided the password as a Java char[]
