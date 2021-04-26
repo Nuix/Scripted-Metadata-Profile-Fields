@@ -1,4 +1,4 @@
-# Yields the number of occurrences  of a term in the item's text
+# Yields the number of occurrences of a term in the item's text
 term = 'deadbeef'
 # Get count from term statistics for this item
 case_stats = $current_case.get_statistics
