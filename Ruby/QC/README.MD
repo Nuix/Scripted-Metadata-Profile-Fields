@@ -18,5 +18,5 @@ This folder contains scripted profile fields related to reporting information fo
 [ScriptedField_EntityCount]: https://github.com/Nuix/Scripted-Metadata-Profile-Fields/blob/master/Ruby/QC/ScriptedField_EntityCount.rb
 [ScriptedField_IrregularCategory]: https://github.com/Nuix/Scripted-Metadata-Profile-Fields/blob/master/Ruby/QC/ScriptedField_IrregularCategory.rb
 [ScriptedField_MsgMd5]: https://github.com/Nuix/Scripted-Metadata-Profile-Fields/blob/master/Ruby/QC/ScriptedField_MsgMd5.rb
-[ScriptedField_TermCount]: [ScriptedField_MsgMd5]: https://github.com/Nuix/Scripted-Metadata-Profile-Fields/blob/master/Ruby/QC/ScriptedField_MsgMd5.rb
+[ScriptedField_TermCount]: https://github.com/Nuix/Scripted-Metadata-Profile-Fields/blob/master/Ruby/QC/ScriptedField_TermCount.rb
 [ScriptedField_WordCount]: https://github.com/Nuix/Scripted-Metadata-Profile-Fields/blob/master/Ruby/QC/ScriptedField_WordCount.rb
