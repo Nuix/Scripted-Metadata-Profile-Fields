@@ -6,9 +6,9 @@
 # -Dnuix.metadata.reportByteSizeAsLong=TRUE
 
 file_size_bytes = $current_item.get_file_size
-return file_size_bytes if !file_size_bytes.nil? && file_size_bytes.positive?
+return file_size_bytes unless file_size_bytes.nil? || !file_size_bytes.positive?
 
 digest_input_size = $current_item.get_digests.get_input_size
-return 0 if digest_input_size.nil? || digest_input_size.negative?
+return digest_input_size unless digest_input_size.nil? || digest_input_size.negative?
 
-digest_input_size
+return 0
