@@ -38,3 +38,7 @@ For the zip item this would be `D:\natives\FakeData\Kovacek_Gracie.zip`, for the
 ## [ScriptedField_PhysicalFilePathExists.rb](https://github.com/Nuix/Scripted-Metadata-Profile-Fields/blob/master/Ruby/Pathing/ScriptedField_PhysicalFilePathExists.rb)
 
 Similar to [ScriptedField_PhysicalFilePath.rb](https://github.com/Nuix/Scripted-Metadata-Profile-Fields/blob/master/Ruby/Pathing/ScriptedField_PhysicalFilePath.rb) except this field then takes the determined file system path and checks whether the specified file actually exists, returning `true` if is does and `false` if not.  This field will also yield blank values if the given item is not `flag:physical_file`.
+
+## [ScriptedField_ItemPathWithoutEvidenceContainerName.rb](https://github.com/Nuix/Scripted-Metadata-Profile-Fields/blob/master/Ruby/Pathing/ScriptedField_ItemPathWithoutEvidenceContainerName.rb)
+
+Item path, without the leading evidence container name.  For example, if the evidence container for an item was named `Kovacek Gracie - Emails` and the path to an item was `/Kovacek Gracie - Emails/Emails/Sent/00000013_Ignore Cardiovascular Disease.eml`, this field would instead yield `/Emails/Sent/00000013_Ignore Cardiovascular Disease.eml`.
