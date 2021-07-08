@@ -1,4 +1,4 @@
-# Yield true if the given item has the property "Mapi-Message-Flags" and
+# Yield true if the given email item has the property "Mapi-Message-Flags" and
 # that property contains the flag "unsent", otherwise yield false
 
 def get_message_flags(item)
@@ -21,4 +21,9 @@ def has_message_flag(target_flag, item)
 	return get_message_flags(item).any?{|mf| mf.downcase.strip == target_flag.downcase.strip}
 end
 
-return has_message_flag("unsent",$current_item)
+kind = $current_item.getKind.getName
+if kind.downcase.strip != "email"
+	return ""
+else
+	return has_message_flag("unsent",$current_item)
+end
