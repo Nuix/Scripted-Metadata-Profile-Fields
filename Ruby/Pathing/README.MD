@@ -46,3 +46,11 @@ Item path, without the leading evidence container name.  For example, if the evi
 ## [ScriptedField_HasChildren.rb](https://github.com/Nuix/Scripted-Metadata-Profile-Fields/blob/master/Ruby/Pathing/ScriptedField_HasChildren.rb)
 
 Yields `true` if the items has child items, `false` if it does not.
+
+## [ScriptedField_ImmediateContainerAncestorName.rb](https://github.com/Nuix/Scripted-Metadata-Profile-Fields/blob/master/Ruby/Pathing/ScriptedField_ImmediateContainerAncestorName.rb)
+
+Searches bottom up through the ancestor items of the given item, finding the first kind container and yielding its name.  Yields blank if none is found.  Excludes Nuix evidence container items.
+
+## [ScriptedField_TopMostContainerAncestorName.rb](https://github.com/Nuix/Scripted-Metadata-Profile-Fields/blob/master/Ruby/Pathing/ScriptedField_TopMostContainerAncestorName.rb)
+
+Searches top down through the ancestor items of the given item, finding the first kind container and yielding its name.  Yields blank if none is found.  Excludes Nuix evidence container items.
