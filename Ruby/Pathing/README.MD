@@ -42,3 +42,7 @@ Similar to [ScriptedField_PhysicalFilePath.rb](https://github.com/Nuix/Scripted-
 ## [ScriptedField_ItemPathWithoutEvidenceContainerName.rb](https://github.com/Nuix/Scripted-Metadata-Profile-Fields/blob/master/Ruby/Pathing/ScriptedField_ItemPathWithoutEvidenceContainerName.rb)
 
 Item path, without the leading evidence container name.  For example, if the evidence container for an item was named `Kovacek Gracie - Emails` and the path to an item was `/Kovacek Gracie - Emails/Emails/Sent/00000013_Ignore Cardiovascular Disease.eml`, this field would instead yield `/Emails/Sent/00000013_Ignore Cardiovascular Disease.eml`.
+
+## [ScriptedField_HasChildren.rb](https://github.com/Nuix/Scripted-Metadata-Profile-Fields/blob/master/Ruby/Pathing/ScriptedField_HasChildren.rb)
+
+Yields `true` if the items has child items, `false` if it does not.
