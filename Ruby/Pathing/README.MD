@@ -51,6 +51,10 @@ Yields `true` if the items has child items, `false` if it does not.
 
 Searches bottom up through the ancestor items of the given item, finding the first kind container and yielding its name.  Yields blank if none is found.  Excludes Nuix evidence container items.
 
+## [ScriptedField_NonEmailImmediateContainerAncestorName.rb](https://github.com/Nuix/Scripted-Metadata-Profile-Fields/blob/master/Ruby/Pathing/ScriptedField_NonEmailImmediateContainerAncestorName.rb)
+
+If the item is not kind email, searches bottom up through the ancestor items of the given item, finding the first kind container and yielding its name.  Yields blank if none is found.  Excludes Nuix evidence container items.
+
 ## [ScriptedField_TopMostContainerAncestorName.rb](https://github.com/Nuix/Scripted-Metadata-Profile-Fields/blob/master/Ruby/Pathing/ScriptedField_TopMostContainerAncestorName.rb)
 
 Searches top down through the ancestor items of the given item, finding the first kind container and yielding its name.  Yields blank if none is found.  Excludes Nuix evidence container items.
