@@ -58,3 +58,12 @@ If the item is not kind email, searches bottom up through the ancestor items of 
 ## [ScriptedField_TopMostContainerAncestorName.rb](https://github.com/Nuix/Scripted-Metadata-Profile-Fields/blob/master/Ruby/Pathing/ScriptedField_TopMostContainerAncestorName.rb)
 
 Searches top down through the ancestor items of the given item, finding the first kind container and yielding its name.  Yields blank if none is found.  Excludes Nuix evidence container items.
+
+## [ScriptedField_ImmediateNonFolderContainerAncestorName.rb](https://github.com/Nuix/Scripted-Metadata-Profile-Fields/blob/master/Ruby/Pathing/ScriptedField_ImmediateNonFolderContainerAncestorName.rb)
+
+Similar to [ScriptedField_ImmediateContainerAncestorName.rb](https://github.com/Nuix/Scripted-Metadata-Profile-Fields/blob/master/Ruby/Pathing/ScriptedField_ImmediateContainerAncestorName.rb), but skips containers of mime type:
+
+- `application/vnd.nuix-evidence`
+- `filesystem/directory`
+
+This way an email from a PST should report the PST name rather than an intervening folder like "Inbox" and a file from a compressed archive the name of the archive rather than an intervening folder.
