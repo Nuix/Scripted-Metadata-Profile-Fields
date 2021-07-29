@@ -4,6 +4,7 @@
 ignored_container_mime_types = {
 	"application/vnd.nuix-evidence" => true,
 	"filesystem/directory" => true,
+	"application/vnd.ms-outlook-folder" => true,
 }
 
 path_items = $current_item.getPath
