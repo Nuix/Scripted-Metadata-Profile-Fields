@@ -5,7 +5,7 @@ This folder contains scripted profile fields related to reporting information fo
 
 | Field | Notes |
 |-------|-------|
-| [ScriptedField_BytesSize.rb][ScriptedField_BytesSize] | Yields the file size or digest input size, in bytes. |
+| [ScriptedField_Size.rb][ScriptedField_Size] | Yields the file size or digest input size in specific units. |
 | [ScriptedField_DecryptionPassword.rb][ScriptedField_DecryptionPassword] | Provides the password used to decrypt an item, if there is one. |
 | [ScriptedField_DigestLists.rb][ScriptedField_DigestLists] | This field reports a delimited list of digest lists that a given item's MD5 is a member of.|
 | [ScriptedField_EntityCount.rb][ScriptedField_EntityCount] | This field reports the number of occurences of each named entity within the item's text.|
@@ -15,7 +15,7 @@ This folder contains scripted profile fields related to reporting information fo
 | [ScriptedField_TermCount.rb][ScriptedField_TermCount] | Yields the number of occurrences of a term in the item's text. |
 | [ScriptedField_WordCount.rb][ScriptedField_WordCount] | This field yields the number total term occurrences in the given item's content text.|
 
-[ScriptedField_BytesSize]: https://github.com/Nuix/Scripted-Metadata-Profile-Fields/blob/master/Ruby/QC/ScriptedField_BytesSize.rb
+[ScriptedField_Size]: https://github.com/Nuix/Scripted-Metadata-Profile-Fields/blob/master/Ruby/QC/ScriptedField_Size.rb
 [ScriptedField_DecryptionPassword]: https://github.com/Nuix/Scripted-Metadata-Profile-Fields/blob/master/Ruby/QC/ScriptedField_DecryptionPassword.rb
 [ScriptedField_DigestLists]: https://github.com/Nuix/Scripted-Metadata-Profile-Fields/blob/master/Ruby/QC/ScriptedField_DigestLists.rb
 [ScriptedField_EntityCount]: https://github.com/Nuix/Scripted-Metadata-Profile-Fields/blob/master/Ruby/QC/ScriptedField_EntityCount.rb
