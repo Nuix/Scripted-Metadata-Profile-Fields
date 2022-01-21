@@ -67,3 +67,7 @@ Similar to [ScriptedField_ImmediateContainerAncestorName.rb](https://github.com/
 - `filesystem/directory`
 
 This way an email from a PST should report the PST name rather than an intervening folder like "Inbox" and a file from a compressed archive the name of the archive rather than an intervening folder.
+
+## [ScriptedField_DepthFromTopLevel.rb](https://github.com/Nuix/Scripted-Metadata-Profile-Fields/blob/master/Ruby/Pathing/ScriptedField_DepthFromTopLevel.rb)
+
+Yields the depth from a given item to its top level item.  For example the child of an email, assuming given email it top level item in its family, is depth 1, child of that depth 2 and so on.  If th given item has no top level item, this will yield 0.
