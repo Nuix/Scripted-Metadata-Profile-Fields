@@ -21,9 +21,9 @@ def has_message_flag(target_flag, item)
 	return get_message_flags(item).any?{|mf| mf.downcase.strip == target_flag.downcase.strip}
 end
 
-kind = $current_item.getKind.getName
+kind = current_item.getKind.getName
 if kind.downcase.strip != "email"
 	return ""
 else
-	return has_message_flag("read",$current_item)
+	return has_message_flag("read",current_item)
 end

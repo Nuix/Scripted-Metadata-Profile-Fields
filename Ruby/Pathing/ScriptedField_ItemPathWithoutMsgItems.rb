@@ -1,5 +1,5 @@
 # Get the path items for the current item, will include the current item as the last element
-path_items = $current_item.getPath
+path_items = current_item.getPath
 
 if path_items.size < 2
 	return "/"

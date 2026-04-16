@@ -7,10 +7,10 @@ ignored_container_mime_types = {
 	"application/vnd.ms-outlook-folder" => true,
 }
 
-path_items = $current_item.getPath
+path_items = current_item.getPath
 path_items.reverse_each do |item|
 	# Don't report this item if it is a container
-	next if item == $current_item
+	next if item == current_item
 
 	kind = item.getKind.getName
 

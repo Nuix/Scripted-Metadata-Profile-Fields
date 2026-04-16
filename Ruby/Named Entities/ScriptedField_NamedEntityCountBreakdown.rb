@@ -5,7 +5,7 @@ include_zero_count_entities = false
 entity_types = $current_case.getAllEntityTypes
 count_breakdown = []
 entity_types.each do |type|
-	type_count = $current_item.getEntities(type).size
+	type_count = current_item.getEntities(type).size
 	count_breakdown << "#{type}:#{type_count}" if (type_count > 0 || include_zero_count_entities)
 end
 return count_breakdown.join("; ")

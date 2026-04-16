@@ -64,10 +64,10 @@ value_if_not_physical = ""
 # items which have errors will yield blank values
 yield_error_messages = true
 
-if $current_item.isPhysicalFile == false
+if current_item.isPhysicalFile == false
 	return value_if_not_physical
 else
-	result = get_physical_path($current_item)
+	result = get_physical_path(current_item)
 	if result[:success] == false
 		if yield_error_messages
 			return result[:error]

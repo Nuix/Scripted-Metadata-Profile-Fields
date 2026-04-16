@@ -1,12 +1,12 @@
 # Reports subject only items which are not an email
 
-kind = $current_item.getKind.getName
+kind = current_item.getKind.getName
 if kind.downcase.strip == "email"
 	return ""
 else
 	# Used to find subject key in case it has odd capitalization
 	subject_pattern = /^subject$/i
-	properties = $current_item.getProperties
+	properties = current_item.getProperties
 	
 	# Find key which is "subject" (case insensitive)
 	subject_key = properties.keys.find{|k|k =~ subject_pattern}

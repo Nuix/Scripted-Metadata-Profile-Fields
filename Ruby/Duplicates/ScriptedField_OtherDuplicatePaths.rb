@@ -8,7 +8,7 @@ end
 # We will collect individual item paths in paths variable
 paths = []
 # Get all duplicates of the current item
-duplicate_items = $current_item.getDuplicates
+duplicate_items = current_item.getDuplicates
 # Add paths to current item's duplicates
 paths += duplicate_items.map{|dupe_item| get_item_path(dupe_item) }
 # Return paths joined

@@ -1,5 +1,5 @@
 # Returns unique addressess from TO, CC, BCC, and FROM fields.
-communication = $current_item.get_communication
+communication = current_item.get_communication
 return if communication.nil?
 
 # Get java.util.List<Address> for each field

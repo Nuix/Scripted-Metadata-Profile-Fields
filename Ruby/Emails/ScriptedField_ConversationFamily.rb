@@ -1,4 +1,4 @@
-properties = $current_item.get_properties
+properties = current_item.get_properties
 # First non-blank value from Mapi-Conversation-Index and Thread-Index
 index = properties['Mapi-Conversation-Index'] || properties['Thread-Index']
 # Ignore items without an index

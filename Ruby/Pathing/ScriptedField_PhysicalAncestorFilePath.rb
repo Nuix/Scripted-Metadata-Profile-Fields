@@ -84,7 +84,7 @@ yield_error_messages = true
 # If the current item if flag:physical_file we will use it, otherwise
 # we will try to find an ancestor item which is flag:physical_file, if
 # there is also no ancestor that qualifies we return no_physical_ancestor_value
-item = $current_item
+item = current_item
 if item.isPhysicalFile == false
 	item = find_physical_ancestor(item)
 end

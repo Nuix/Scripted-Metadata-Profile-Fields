@@ -23,4 +23,4 @@ if $password_handler.nil?
 	}
 end
 
-return $current_item.revealDecryptionPassword($password_handler)
+return current_item.revealDecryptionPassword($password_handler)

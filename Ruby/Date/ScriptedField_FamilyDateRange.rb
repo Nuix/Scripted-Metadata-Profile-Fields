@@ -4,7 +4,7 @@ date_format = "YYYYMMdd"
 # to which the item dates will be converted to
 time_zone = org.joda.time.DateTimeZone.getDefault
 
-family_items = $current_item.getFamily
+family_items = current_item.getFamily
 if family_items.nil?
 	return ""
 end

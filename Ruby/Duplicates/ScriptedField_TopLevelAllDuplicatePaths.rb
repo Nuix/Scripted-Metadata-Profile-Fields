@@ -11,7 +11,7 @@ end
 # We will collect individual item paths in paths variable
 paths = []
 # Get the current item's top level item
-top_level_item = $current_item.getTopLevelItem
+top_level_item = current_item.getTopLevelItem
 # If this item does not have a top level item, likely because
 # it is "above" top leve, then we return $value_when_no_top_level
 if top_level_item.nil?

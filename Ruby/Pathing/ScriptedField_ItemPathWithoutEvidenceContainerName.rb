@@ -1,5 +1,5 @@
 # Get the path items for the current item, will not include the current item as the last element
-path_names = $current_item.getLocalisedPathNames
+path_names = current_item.getLocalisedPathNames
 
 if path_names.size < 2
 	return "/"

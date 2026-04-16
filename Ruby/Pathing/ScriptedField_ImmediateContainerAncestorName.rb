@@ -1,10 +1,10 @@
 # Finds the most immediate ancestor container and yields its name, excluding
 # Nuix evidence container items.  Yields a blank value if none is found.
 
-path_items = $current_item.getPath
+path_items = current_item.getPath
 path_items.reverse_each do |item|
 	# Don't report this item if it is a container
-	next if item == $current_item
+	next if item == current_item
 
 	kind = item.getKind.getName
 	if kind.downcase.strip == "container"

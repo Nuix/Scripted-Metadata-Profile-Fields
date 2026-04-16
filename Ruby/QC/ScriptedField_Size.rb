@@ -13,10 +13,10 @@ BYTES_PER_UNIT = case SYMBOL
                    return 'Invalid symbol/missing unit value'
 end
 
-bytes = $current_item.get_file_size
+bytes = current_item.get_file_size
 # Handle non-positive file size
 unless !bytes.nil? && bytes.positive?
-  bytes = $current_item.get_digests.get_input_size
+  bytes = current_item.get_digests.get_input_size
   # Handle non-positive digest input size
   bytes = 0 unless !bytes.nil? && bytes.positive?
 end

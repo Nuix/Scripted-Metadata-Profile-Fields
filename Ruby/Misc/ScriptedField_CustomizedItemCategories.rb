@@ -9,7 +9,7 @@ mapping = {
 }
 
 # Get item category Nuix has assigned
-item_category = $current_item.getItemCategory
+item_category = current_item.getItemCategory
 
 # Convert to how we want it defined (see 'mapping' above)
 mapped_value = mapping[item_category]
