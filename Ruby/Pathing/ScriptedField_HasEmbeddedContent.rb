@@ -52,9 +52,9 @@ PARENT_MIME_TYPES = [
 	# PDF
 	"application/pdf",
 	# OpenDocument (uncomment if desired)
-	# "application/vnd.oasis.opendocument.text",
-	# "application/vnd.oasis.opendocument.spreadsheet",
-	# "application/vnd.oasis.opendocument.presentation",
+	"application/vnd.oasis.opendocument.text",
+	"application/vnd.oasis.opendocument.spreadsheet",
+	"application/vnd.oasis.opendocument.presentation",
 ]
 
 # A parent (matching PARENT_MIME_TYPES) is flagged "true" if it has at least one
